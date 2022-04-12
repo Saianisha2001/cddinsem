@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Flask Project</title>
+</head>
+<body>
+<h3 align="center">Online Gift Shopping </h3><br>
+     <a href="{{url_for('index')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="{{url_for('adduser')}}">Add User</a>&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="{{url_for('deleteuser')}}">Delete User</a>&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="{{url_for('viewusers')}}">view user</a>&nbsp;&nbsp;&nbsp;&nbsp;
+     <br><br>
+     <h3 align="center"><u>Add user</u></h3><br><br>
+     <center>
+         <form method="post" action="/insertuser">
+         <input type="text" name="name" placeholder="Enter name" required><br><br>
+          <input type="text" name="email" placeholder="Enter email" required><br><br>
+         <input type="text" name="password" placeholder="Enter password" required><br><br>
+          <input type="text" name="location" placeholder="Enter location" required><br><br>
+           <input type="submit" value="Add User">
+         </form>
+     </center>
+
+ </body>
+</html>
